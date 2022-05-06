@@ -9,7 +9,160 @@
 <link rel="stylesheet" href="style.css">
 <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 
-<table class="sortable styled-table ">
+<script>
+    function openTab(evt, tab) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tab).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+<h1>日本語動詞</h1>
+
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'verbs')">動詞リスト</button>
+    <button class="tablinks" onclick="openTab(event, 'honorific')">敬語</button>
+</div>
+
+
+<div id="honorific" class="tabcontent" style="display: none;">
+    <table class="sortable styled-table ">
+        <thead>
+        <tr>
+            <th>丁寧語</th>
+            <th>尊敬語</th>
+            <th>謙譲語</th>
+            <th>丁重語</th>
+            <th>美化語</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <th>します</th>
+            <th>なさいます</th>
+            <th>いたします</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <th>あります</th>
+            <th></th>
+            <th></th>
+            <th>ございます</th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <th>います</th>
+            <th>いらっしゃいます<br>おいでになります</th>
+            <th>おります</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <th>行きます・来ます</th>
+            <th>いらっしゃいます<br>おいでになります<br>お越しになります</th>
+            <th>参ります<br>伺います</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <th>上げます</th>
+            <th></th>
+            <th>差し上げます</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <th>くれます</th>
+            <th>下さいます</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <th>もらいます</th>
+            <th></th>
+            <th>頂きます<br>頂戴します</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <th>食べます・飲みます</th>
+            <th>召し上がります<br>上がります</th>
+            <th>頂きます<br>頂戴します<br></th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <th>言います</th>
+            <th>おっしゃいます</th>
+            <th>申します<br>申し上げます</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <th>聞きます</th>
+            <th>お耳に入ります</th>
+            <th>拝聴します<br>伺います<br>うけたまわる</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <th>見ます</th>
+            <th>ご覧になります</th>
+            <th>拝見します</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <th>思います</th>
+            <th></th>
+            <th>存じます</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <th>知っています</th>
+            <th>ご存じです</th>
+            <th>存じます<br>存じ上げます<br>承知します<br></th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <th>会います</th>
+            <th></th>
+            <th>お目にかかります<br></th>
+            <th></th>
+            <th></th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div id="verbs" class="tabcontent">
+    <table class="sortable styled-table">
     <thead>
     <tr>
         <th>終止形</th>
@@ -64,6 +217,18 @@
         </th>
         <th>上げ</th>
         <th><span class="l2h">あ</span><span class="h">がる</span></th>
+        <th>下一段</th>
+        <th>自動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                諦<rt>あきら</rt>
+            </ruby>める
+        </th>
+        <th>諦め</th>
+        <th><span class="l2h">あ</span><span class="h2l">きらめ</span><span class="l">る</span></th>
         <th>下一段</th>
         <th>自動詞</th>
     </tr>
@@ -134,6 +299,64 @@
         <th>自動詞</th>
     </tr>
 
+
+    <tr>
+        <th>
+            <ruby>
+                与<rt>あた</rt>
+            </ruby>える
+        </th>
+        <th>与え</th>
+        <th><span class="l2h">あ</span><span class="h">たえる</span></th>
+        <th>下一段</th>
+        <th>他動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                温<rt>あたた</rt>
+            </ruby>まる・
+            <ruby>
+                暖<rt>あたた</rt>
+            </ruby>まる
+        </th>
+        <th>温まり</th>
+        <th><span class="l2h">あ</span><span class="h2l">たたま</span><span class="l">る</span></th>
+        <th>五段</th>
+        <th>自動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                温<rt>あたた</rt>
+            </ruby>める・
+            <ruby>
+                暖<rt>あたた</rt>
+            </ruby>める
+        </th>
+        <th>温ね</th>
+        <th><span class="l2h">あ</span><span class="h2l">たため</span><span class="l">る</span></th>
+        <th>下一段</th>
+        <th>他動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                当<rt>あ</rt>
+            </ruby>たる・
+            <ruby>
+                中<rt>あた</rt>
+            </ruby>る
+        </th>
+        <th>当たり</th>
+        <th><span class="l2h">あ</span><span class="h">たる</span></th>
+        <th>五段</th>
+        <th>自動詞</th>
+    </tr>
+
     <tr>
         <th>
             <ruby>
@@ -161,6 +384,21 @@
     <tr>
         <th>
             <ruby>
+                当<rt>あ</rt>
+            </ruby>てる・
+            <ruby>
+                充<rt>あ</rt>
+            </ruby>てる
+        </th>
+        <th>当て</th>
+        <th><span class="l2h">あ</span><span class="h">てる</span></th>
+        <th>下一段</th>
+        <th>他動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
                 浴<rt>あ</rt>
             </ruby>びる
         </th>
@@ -169,6 +407,19 @@
         <th>上一段</th>
         <th>他動詞</th>
     </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                余<rt>あま</rt>
+            </ruby>る
+        </th>
+        <th>余り</th>
+        <th><span class="l2h">あ</span><span class="h2l">ま</span><span class="l">る</span></th>
+        <th>五段</th>
+        <th>自動詞</th>
+    </tr>
+
 
     <tr>
         <th>
@@ -195,6 +446,60 @@
         <th><span class="l2h">あ</span><span class="h">らう</span></th>
         <th>五段</th>
         <th>他動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                改<rt>あらた</rt>
+            </ruby>める・
+            <ruby>
+                革<rt>あらた</rt>
+            </ruby>める
+        </th>
+        <th>改め</th>
+        <th><span class="l2h">あ</span><span class="h2l">らため</span><span class="l">る</span></th>
+        <th>下一段</th>
+        <th>他動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                表<rt>あらわ</rt>
+            </ruby>す・
+            <ruby>
+                現<rt>あらわ</rt>
+            </ruby>す・
+            <ruby>
+                顕<rt>あらわ</rt>
+            </ruby>す・
+            <ruby>
+                著<rt>あらわ</rt>
+            </ruby>す
+        </th>
+        <th>表し</th>
+        <th><span class="l2h">あ</span><span class="h2l">らわ</span><span class="l">す</span></th>
+        <th>五段</th>
+        <th>他動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                表<rt>あらわ</rt>
+            </ruby>れる・
+            <ruby>
+                現<rt>あらわ</rt>
+            </ruby>れる・
+            <ruby>
+                顕<rt>あらわ</rt>
+            </ruby>ねる
+        </th>
+        <th>現れ</th>
+        <th><span class="l2h">あ</span><span class="h2l">らわれ</span><span class="l">る</span></th>
+        <th>下一段</th>
+        <th>自動詞</th>
     </tr>
 
     <tr>
@@ -292,48 +597,6 @@
     <tr>
         <th>
             <ruby>
-                居<rt>い</rt>
-            </ruby>る
-        </th>
-        <th>居</th>
-        <th><span class="l2h">い</span><span class="h">る</span></th>
-        <th>上一段</th>
-        <th>自動詞</th>
-    </tr>
-
-    <tr>
-        <th>
-            <ruby>
-                要<rt>い</rt>
-            </ruby>る・
-            <ruby>
-                入<rt>い</rt>
-            </ruby>る
-        </th>
-        <th>入り</th>
-        <th><span class="l2h">い</span><span class="h">る</span></th>
-        <th>五段</th>
-        <th>自動詞</th>
-    </tr>
-
-    <tr>
-        <th>
-            <ruby>
-                入<rt>い</rt>
-            </ruby>れる・
-            <ruby>
-                淹<rt>い</rt>
-            </ruby>れる
-        </th>
-        <th>入れ</th>
-        <th><span class="l2h">い</span><span class="h">れる</span></th>
-        <th>下一段</th>
-        <th>他動詞</th>
-    </tr>
-
-    <tr>
-        <th>
-            <ruby>
                 苛<rt>いじ</rt>
             </ruby>める
         </th>
@@ -394,6 +657,17 @@
         <th>他動詞</th>
     </tr>
 
+    <tr>
+        <th>
+            <ruby>
+                嫌<rt>いや</rt>
+            </ruby>がる
+        </th>
+        <th>嫌がり</th>
+        <th><span class="l2h">い</span><span class="h2l">やが</span><span class="l">る</span></th>
+        <th>五段</th>
+        <th>他動詞</th>
+    </tr>
 
     <tr>
         <th>いらっしゃる</th>
@@ -401,6 +675,48 @@
         <th><span class="l2h">い</span><span class="h2l">らっしゃ</span><span class="l">る</span></th>
         <th>五段</th>
         <th>自動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                居<rt>い</rt>
+            </ruby>る
+        </th>
+        <th>居</th>
+        <th><span class="l2h">い</span><span class="h">る</span></th>
+        <th>上一段</th>
+        <th>自動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                要<rt>い</rt>
+            </ruby>る・
+            <ruby>
+                入<rt>い</rt>
+            </ruby>る
+        </th>
+        <th>入り</th>
+        <th><span class="l2h">い</span><span class="h">る</span></th>
+        <th>五段</th>
+        <th>自動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                入<rt>い</rt>
+            </ruby>れる・
+            <ruby>
+                淹<rt>い</rt>
+            </ruby>れる
+        </th>
+        <th>入れ</th>
+        <th><span class="l2h">い</span><span class="h">れる</span></th>
+        <th>下一段</th>
+        <th>他動詞</th>
     </tr>
 
     <!--う-->
@@ -477,6 +793,18 @@
     <tr>
         <th>
             <ruby>
+                失<rt>うしな</rt>
+            </ruby>う
+        </th>
+        <th>失い</th>
+        <th><span class="l2h">う</span><span class="h">しらう</span></th>
+        <th>五段</th>
+        <th>他動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
                 歌<rt>うた</rt>
             </ruby>う・
             <ruby>
@@ -495,6 +823,18 @@
         </th>
         <th>歌い</th>
         <th><span class="l2h">う</span><span class="h">たう</span></th>
+        <th>五段</th>
+        <th>他動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                疑<rt>うたが</rt>
+            </ruby>う
+        </th>
+        <th>疑い</th>
+        <th><span class="l2h">う</span><span class="h">たがう</span></th>
         <th>五段</th>
         <th>他動詞</th>
     </tr>
@@ -562,6 +902,18 @@
     <tr>
         <th>
             <ruby>
+                頷<rt>うなず</rt>
+            </ruby>く
+        </th>
+        <th>頷き</th>
+        <th><span class="l2h">う</span><span class="h2l">なず</span><span class="l">く</span></th>
+        <th>五段</th>
+        <th>自動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
                 生<rt>う</rt>
             </ruby>まれる・
             <ruby>
@@ -586,7 +938,34 @@
         <th>他動詞</th>
     </tr>
 
+    <tr>
+        <th>
+            <ruby>
+                売<rt>う</rt>
+            </ruby>れる
+        </th>
+        <th>売れ</th>
+        <th><span class="l2h">う</span><span class="h">れる</span></th>
+        <th>下一段</th>
+        <th>自動詞</th>
+    </tr>
+
     <!--え-->
+
+    <tr>
+        <th>
+            <ruby>
+                描<rt>えが</rt>
+            </ruby>く・
+            <ruby>
+                画<rt>えが</rt>
+            </ruby>く
+        </th>
+        <th>描き</th>
+        <th><span class="l2h">え</span><span class="h2l">が</span><span class="l">く</span></th>
+        <th>五段</th>
+        <th>他動詞</th>
+    </tr>
 
     <tr>
         <th>
@@ -597,6 +976,21 @@
         <th>選び</th>
         <th><span class="l2h">え</span><span class="h2l">ら</span><span class="l">ぶ</span></th>
         <th>五段</th>
+        <th>他動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                得<rt>え</rt>
+            </ruby>る・
+            <ruby>
+                獲<rt>え</rt>
+            </ruby>る
+        </th>
+        <th>得</th>
+        <th><span class="h2l">え</span><span class="l">る</span></th>
+        <th>下一段</th>
         <th>他動詞</th>
     </tr>
 
@@ -613,6 +1007,45 @@
         <th>おいでになり</th>
         <th><span class="l2h">お</span><span class="h2l">いでにな</span><span class="l">る</span></th>
         <th>上一段</th>
+        <th>自動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                追<rt>お</rt>
+            </ruby>う・
+            <ruby>
+                逐<rt>お</rt>
+            </ruby>う
+        </th>
+        <th>追い</th>
+        <th><span class="l2h">お</span><<span class="h">う</span></th>
+        <th>五段</th>
+        <th>他動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                応<rt>おう</rt>
+            </ruby>じる
+        </th>
+        <th>応じ</th>
+        <th><span class="l2h">お</span><span class="h">うじる</span></th>
+        <th>上一段</th>
+        <th>自動詞</th>
+    </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                終<rt>お</rt>
+            </ruby>える
+        </th>
+        <th>終え</th>
+        <th><span class="l2h">お</span><span class="h">える</span></th>
+        <th>下一段</th>
         <th>自動詞</th>
     </tr>
 
@@ -720,6 +1153,28 @@
         <th>五段</th>
         <th>自動詞</th>
     </tr>
+
+    <tr>
+        <th>
+            <ruby>
+                恐<rt>おそ</rt>
+            </ruby>れる・
+            <ruby>
+                怖<rt>おそ</rt>
+            </ruby>れる・
+            <ruby>
+                畏<rt>おそ</rt>
+            </ruby>れる・
+            <ruby>
+                懼<rt>おそ</rt>
+            </ruby>れる
+        </th>
+        <th>恐れ</th>
+        <th><span class="l2h">お</span><span class="h2l">それ</span><span class="l">る</span></th>
+        <th>下一段</th>
+        <th>自動詞</th>
+    </tr>
+
 
     <tr>
         <th>
@@ -3595,8 +4050,9 @@
         <th>下一段</th>
         <th>自動詞</th>
     </tr>
-
     </tbody>
-</table>
+    </table>
+</div>
+
 </body>
 </html>

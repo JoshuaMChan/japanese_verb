@@ -1,6 +1,6 @@
 .styled-table {
     border-collapse: collapse;
-    margin: 25px 25px;
+    margin: 15px 10px;
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 400px;
@@ -34,28 +34,66 @@
     color: #009879;
 }
 
-.h{
-     PADDING: 1px 0px 0px 0px;
-     MARGIN: 0px 0px 0px 0px;
-     BORDER-TOP: red 1px solid;
- }
+.h {
+    PADDING: 1px 0px 0px 0px;
+    MARGIN: 0px 0px 0px 0px;
+    BORDER-TOP: red 1px solid;
+}
 
-.l{
+.l {
     PADDING: 1px 0px 0px 0px;
     MARGIN: 0px 0px 0px 0px;
     BORDER-BOTTOM: red 1px solid;
 }
 
-.h2l{
+.h2l {
     PADDING: 1px 0px 0px 0px;
     MARGIN: 0px 0px 0px 0px;
     BORDER-TOP: red 1px solid;
     BORDER-RIGHT: red 1px solid;
 }
 
-.l2h{
+.l2h {
     PADDING: 1px 0px 0px 0px;
     MARGIN: 0px 0px 0px 0px;
     BORDER-BOTTOM: red 1px solid;
     BORDER-RIGHT: red 1px solid;
+}
+
+h1 {
+    color: #009879;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Signika', sans-serif;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
 }
